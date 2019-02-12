@@ -1,0 +1,7 @@
+<h1><%= @task.details  %></h1>
+
+<p><%= @task.completed ? "<i class='far fa-check-square'>Task completed</i>".html_safe : "<i class='far fa-square'>Task not completed</i>".html_safe  %></p>
+<h3 class='btn btn-primary'> <%= link_to "edit", edit_path(@task.id) %> </h3>
+
+
+<%= link_to "Back to list", tasks_path %>
